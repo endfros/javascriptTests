@@ -1,10 +1,7 @@
-let var1 = 2;
-let var2 = 3;
+const nombreDeMiCiudad = "Arequipa";
+const añoDeNacimiento = 1999;
+let nombrePropio = "Rodrigo";
+let estatura = 1.75;
+let elCieloEsAzul = true;
 
-if (var1 > var2){
-    console.log("El número 1 es mayor")
-} else if (var1 < var2){
-    console.log("El número 2 es mayor")
-} else {
-    console.log("Los números son iguales")
-}
+console.log("Hola soy", nombrePropio, "y vivo en ", nombreDeMiCiudad)

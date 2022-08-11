@@ -1,5 +1,5 @@
-let var1 = 2;
-let var2 = 3;
+let var1 = 3;
+let var2 = 8;
 
 if (var1 > var2){
     console.log("El número 1 es mayor")
