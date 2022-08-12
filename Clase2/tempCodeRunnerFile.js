@@ -1,8 +1,11 @@
-let variableGlobal = 15;
-
-function saludar(){
-    let variableLocal = 10;
-    console.log(variableLocal, variableGlobal)
+function discoteca(edad){
+    if(edad < 18){
+        return 'aSDasd';
+    } else {
+        console.log("Que baile");
+    }
 }
 
-saludar();
+discoteca(18);
+discoteca(15);
+discoteca(18);

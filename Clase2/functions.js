@@ -70,7 +70,7 @@ multiplicar(15);
 
 function discoteca(edad){
     if(edad < 18){
-        return;
+        return 'aSDasd';
     } else {
         console.log("Que baile");
     }
