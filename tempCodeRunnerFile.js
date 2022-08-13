@@ -1,7 +1,20 @@
-const nombreDeMiCiudad = "Arequipa";
-const añoDeNacimiento = 1999;
-let nombrePropio = "Rodrigo";
-let estatura = 1.75;
-let elCieloEsAzul = true;
+let word = 'hola po rro';
 
-console.log("Hola soy", nombrePropio, "y vivo en ", nombreDeMiCiudad)
+function firstToUppercase(string){
+    let newString = string.split('');
+
+    for (let i = 0; i <= string.length; i++){
+        if (string[0] === string[0].toLowerCase()){
+            newString[0] = string[0].toUpperCase();
+        }
+        // } else if (newString[i] === ' '){
+        //     console.log(true);
+        //     // newString[i] = newString[i];
+        // } else {
+        //     newString[i] = string.charAt(i);
+        // }
+    }
+    return newString.join('');
+}
+
+console.log(firstToUppercase(word));

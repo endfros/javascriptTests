@@ -1,10 +1,5 @@
-function imprimirFrutas(frutas){
-    let n = 0;
-    
-    while(n <= (frutas.length-1)){
-        console.log(frutas[n]);
-        n++;
-    }
+let frutasPreferidas = ['manzana amarilla', 'platano', 'mango', 'sandia'];
+
+for(const fruta of frutasPreferidas){
+    console.log(fruta);
 }
-let frutas = ['manzana', 'platano', 'fresa', 'melon', 'coso'];
-imprimirFrutas(frutas);

@@ -43,3 +43,5 @@ arreglo[0] = 'String';
 const verduras = new Array();
 
 // Esta es otra manera de declarar un arreglo
+
+

@@ -79,3 +79,5 @@ function discoteca(edad){
 discoteca(18);
 discoteca(15);
 discoteca(18);
+
+console.log(4 == '4');
