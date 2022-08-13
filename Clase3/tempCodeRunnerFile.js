@@ -1,5 +1,4 @@
-function imprimirFrutas(){
-    let frutas = ['manzana', 'platano', 'fresa', 'melon'];
+function imprimirFrutas(frutas){
     let n = 0;
     
     while(n <= (frutas.length-1)){
@@ -7,5 +6,5 @@ function imprimirFrutas(){
         n++;
     }
 }
-
-imprimirFrutas();
+let frutas = ['manzana', 'platano', 'fresa', 'melon', 'coso'];
+imprimirFrutas(frutas);
