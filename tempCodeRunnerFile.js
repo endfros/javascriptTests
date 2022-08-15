@@ -1,20 +1,16 @@
-let word = 'hola po rro';
 
-function firstToUppercase(string){
-    let newString = string.split('');
+let word = 'un pajarito volo y se choco contra un camion eee ee e';
 
-    for (let i = 0; i <= string.length; i++){
-        if (string[0] === string[0].toLowerCase()){
-            newString[0] = string[0].toUpperCase();
+function howManyCharacters(string,letter){
+    let characters = 0;
+    for (let i = 0; i < string.length; i++){
+
+        if(string[i] == letter){
+            characters++;
         }
-        // } else if (newString[i] === ' '){
-        //     console.log(true);
-        //     // newString[i] = newString[i];
-        // } else {
-        //     newString[i] = string.charAt(i);
-        // }
     }
-    return newString.join('');
+
+    return characters;
 }
 
-console.log(firstToUppercase(word));
+console.log(howManyCharacters(word,'e'));

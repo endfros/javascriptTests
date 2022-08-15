@@ -176,18 +176,52 @@ console.log(isPalindrome(word));
 
 // ______________________________________________________________
 
-let word = 'hola po rro';
+let word = 'hola aldo que tal!';
 
 function firstToUppercase(string){
-    let newString = string.split('');
-
-    for (let i = 0; i <= string.length; i++){
-        if (string[0] === string[0].toLowerCase()){
-            newString[0] = string[0].toUpperCase();
-        }
-        
+    let newString = string.split(' ')
+    let stringCaps = [];
+    for(let i = 0; i < newString.length; i++){
+        stringCaps[i] = newString[i].charAt(0).toUpperCase() + newString[i].slice(1);
     }
-    return newString.join('');
+
+    return stringCaps.join(' ');
 }
 
 console.log(firstToUppercase(word));
+
+// ______________________________________________________________
+
+let word = 'un pajarito volo y se choco contra un camion';
+
+function biggestWord(string){
+    let newString = string.split(' ')
+    let biggestWord = '';
+    for(let i = 0; i < newString.length; i++){
+        if(newString[i].length > biggestWord.length){
+            biggestWord = newString[i];
+        }
+    }
+    return biggestWord;
+}
+
+console.log(biggestWord(word));
+
+// ______________________________________________________________
+
+
+let word = 'un pajarito volo y se choco contra un camion';
+
+function howManyCharacters(string,letter){
+    let characters = 0;
+    for (let i = 0; i < string.length; i++){
+
+        if(string[i] == letter){
+            characters++;
+        }
+    }
+
+    return characters;
+}
+
+console.log(howManyCharacters(word,'e'));
