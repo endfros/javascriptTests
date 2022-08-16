@@ -13,7 +13,7 @@ console.log(arreglo);
 
 // ______________________________________________________________
 
-let arreglo = [100,6,10,5,2,20,9,14,99];
+let arreglo = [100,6,10,5,2,20,9,148,99,129];
 
 function findBiggest(arreglo){
     let biggestNumber = 0;
@@ -68,8 +68,9 @@ let arreglo = [100,6,20,5,20,20,9,14,20];
 
 function manyRepeatedNumbers(arreglo, numero){
     let repeatedNumbers = 0;
+
     for (let i = 0; i < arreglo.length; i++ ){
-        if (arreglo[i] == numero){
+        if (arreglo[i] === numero){
             repeatedNumbers++;
         }
     }
@@ -84,14 +85,14 @@ let frutas = ['manzana','platano','pera','naranja','sandia','fresa'];
 
 function isInArray(arreglo, string){
     for (let i = 0; i < arreglo.length; i++ ){
-        if (arreglo[i] == string){
+        if (arreglo[i] === string){
             return true;
         }
     }
     return false;
 }
 
-console.log(isInArray(frutas,'popo'));
+console.log(isInArray(frutas,'fresa'));
 
 // ______________________________________________________________
 
@@ -137,7 +138,7 @@ function fibonacci(elements){
     }
     return n;
 }
-console.log(fibonacci(8));
+console.log(fibonacci(56));
 
 // ______________________________________________________________
 

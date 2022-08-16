@@ -1,16 +1,8 @@
-
-let word = 'un pajarito volo y se choco contra un camion eee ee e';
-
-function howManyCharacters(string,letter){
-    let characters = 0;
-    for (let i = 0; i < string.length; i++){
-
-        if(string[i] == letter){
-            characters++;
-        }
+function fibonacci(elements){
+    let n = [0,1];
+    for (let i = 2; i <= elements; i++){
+        n.push(n[i-1]+n[i-2]);
     }
-
-    return characters;
+    return n;
 }
-
-console.log(howManyCharacters(word,'e'));
+console.log(fibonacci(56));
