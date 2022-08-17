@@ -87,3 +87,61 @@ let mezclar = (contenedor, algo) => {
 };
 
 hacerEnsalada('tupperware',verduras,'chucky',lavar,cortar,mezclar);
+
+// regerencia, una direccion a un espacio de memoria
+
+// sincrono, enamorao, asincrono, te llega al pincho
+
+
+function mandarMensajeAlaEx(hacerAlgoRespuesta){
+
+    let callback = () => {
+        console.log('Ya me respondio');
+    };
+ 
+    let respuesta = 'Yo tambien te extraño';
+
+    if(respuesta !== undefined){
+        hacerAlgoRespuesta(respuesta);
+    }
+
+    setTimeout(callback,3000); 
+};
+
+function hacerAlgoRespuesta(){
+    console.log('Bloqueada ALV');
+}
+
+mandarMensajeAlaEx(hacerAlgoRespuesta);
+
+
+let personas = [{
+    name:'aldo',
+    edad: 30
+},{ 
+    name:'miguel',
+    edad: 30
+},{ 
+    name:'juan',
+    edad: 30
+}];
+
+// console.log(personas.map(x => x.name));
+// Parsear, transformar estos datos que recibimos, por ejemplo en el de 
+// arriba quizas solo necesito el nombre, entonces los pareso y seran objetos
+// pero solo con la propiedad nombre, tons modificar, transformar, y se hace
+// con puro JS.
+// peticion solicitud de algo a un recurso, por su naturaleza son asíncronas
+
+function parsearPersonas(personas){
+    let personasTransformadas = [];
+    let count = 0;
+    for(let persona of personas){
+        // trae cada objeto de dicho arreglo
+        personasTransformadas[count] = {nombre: persona.name, sexo:'masculino'};
+        count++;
+    }
+    return personasTransformadas;
+};
+
+console.log(parsearPersonas(personas));
