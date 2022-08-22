@@ -1,9 +1,6 @@
 function saludar (saludo){
     let time = 2000;
-    for (let i = 0; i<30; i++){
-        setTimeout(saludo,time);
-        time = time + 2000;
-    }
+    setInterval(saludo,time);
 };
 
 let saludo = () => {
@@ -27,7 +24,6 @@ saludar(saludo);
 //----------------------------------------
 
 let automovil = {
-    chasis: true,
     color: 'verde',
     ruedas: '4',
     suspension: true,
@@ -144,3 +140,47 @@ let saludo = () => {
 }
 
 saludoPersona(persona);
+
+// se puede utilizar const porque no puede cambiar
+// el valor almacennado en ese espacio en memoria
+
+const auto = new Object();
+auto.puertas = 4;
+auto.electrico = false;
+auto.acelerar = () => {
+    console.log('Voy acelerando');
+};
+
+
+function Carro(){
+    this.puertas = 4
+
+}
+
+const bmw = new Carro();
+
+// un objeto es una instancia de una clase
+// un objeto de ese tipo es una copia de ese otro tipo de objeto
+
+class PersonaJuegaPS5{ // ES6 sugar syntax
+    constructor(){
+        this.consola = true;
+        this.gordo = true;
+        this.lentes = true;
+
+    }//soy un metodo para construir el template 
+
+    saludar(){
+        console.log('Le da amsiedad');
+    }
+
+    jugarPs5(){
+        console.log('Todo el tiempo se la pasa jugando');
+    }
+}
+
+const gordoFriki = new PersonaJuegaPS5();
+
+gordoFriki.saludar();
+
+// poo herencia: como compartir 

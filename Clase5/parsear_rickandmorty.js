@@ -673,7 +673,10 @@ const RickAndMortyCharacters = {
 
 //-----------------------------------------------------------------------------------
 
-// console.log(RickAndMortyCharacters.results.map(x => x.name));
+// let userInfoObj = JSON.parse(RickAndMortyCharacters);
+// console.log(userInfoObj);
+
+console.log(RickAndMortyCharacters.results.map(x => x.name));
 
 function parsearPersonas(personas){
     let personasTransformadas = [];

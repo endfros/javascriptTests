@@ -1,4 +1,4 @@
-const RickAndMortyCharacters = {
+let RickAndMortyCharacters = {
     "info": {
       "count": 826,
       "pages": 42,
@@ -673,17 +673,19 @@ const RickAndMortyCharacters = {
 
 //-----------------------------------------------------------------------------------
 
+let userInfoObj = JSON.parse(RickAndMortyCharacters);
+console.log(userInfoObj);
 // console.log(RickAndMortyCharacters.results.map(x => x.name));
 
-function parsearPersonas(personas){
-    let personasTransformadas = [];
-    let count = 0;
-    for(let persona of personas.results){
-        // trae cada objeto de dicho arreglo
-        personasTransformadas[count] = {nombre: persona.name, id: persona.id, url: persona.url, image: persona.image, episode: persona.episode.slice(0,5)};
-        count++;
-    }
-    return personasTransformadas;
-};
+// function parsearPersonas(personas){
+//     let personasTransformadas = [];
+//     let count = 0;
+//     for(let persona of personas.results){
+//         // trae cada objeto de dicho arreglo
+//         personasTransformadas[count] = {nombre: persona.name, id: persona.id, url: persona.url, image: persona.image, episode: persona.episode.slice(0,5)};
+//         count++;
+//     }
+//     return personasTransformadas;
+// };
 
-console.log(parsearPersonas(RickAndMortyCharacters));
+// console.log(parsearPersonas(RickAndMortyCharacters));
