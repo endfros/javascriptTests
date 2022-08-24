@@ -1,0 +1,2 @@
+// encadenamiento de prototipo.
+//

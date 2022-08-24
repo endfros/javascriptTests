@@ -126,6 +126,8 @@ let personas = [{
     edad: 30
 }];
 
+console.log(personas.name);
+
 // console.log(personas.map(x => x.name));
 // Parsear, transformar estos datos que recibimos, por ejemplo en el de 
 // arriba quizas solo necesito el nombre, entonces los pareso y seran objetos
