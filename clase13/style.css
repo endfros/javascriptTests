@@ -1,0 +1,33 @@
+body {
+	background: linear-gradient(-45deg, rgba(237,230,233,1), #db9db5, rgba(162,183,209,1));
+	background-size: 800% 800%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.list-background {
+  background: rgb(237,230,233);
+  background: linear-gradient(90deg, rgba(237,230,233,1) 0%, rgba(162,183,209,1) 100%);
+}
+
+.item-hover{
+  transition: 0.5s;
+}
+
+.item-hover:hover{
+  background: rgba(183, 196, 212, 0.656);
+  transition: 0.5s;
+  scale: 1.15;
+}

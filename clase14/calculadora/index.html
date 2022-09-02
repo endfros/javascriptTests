@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="w-screen h-screen grid place-items-center backdrop-blur-sm">
+        <div class="calculator-background flex flex-col w-fit p-5 rounded-xl items-center">
+            <h1 class="font-mono text-2xl font-semibold">Soy una calculadora</h1>
+    
+            <div class="flex flex-row items-center">
+                <div class="flex flex-col">
+                    <section class="flex flex-col pr-4">
+    
+                        <!-- <label for="num1" class="font-mono mt-6 text-xl font-semibold">Entrada</label> -->
+                        <input type="text" name="num1" class="input1 input-background px-5 py-8 mt-5 rounded-xl font-mono text-xl font-semibold">
+                    
+                        <!-- <label for="num2" class="font-mono mt-6 text-xl font-semibold">Numero2</label>
+                        <input type="number" name="num2" class="input2 input-background px-5 py-1 mt-5 rounded-full font-mono text-xl font-semibold"> -->
+                    
+                    </section>
+                    <section class="flex flex-col pt-5">
+                        <div class="flex">
+                            <button class="seven basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                7
+                            </button>
+                            <button class="eight basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                8
+                            </button>
+                            <button class="nine basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                9
+                            </button>
+                        </div>
+    
+                        <div class="flex">
+                            <button class="four basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                4
+                            </button>
+                            <button class="five basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                5
+                            </button>
+                            <button class="six basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                6
+                            </button>
+                        </div>
+    
+                        <div class="flex">
+                            <button class="one basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                1
+                            </button>
+                            <button class="two basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                2
+                            </button>
+                            <button class="three basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                3
+                            </button>
+                        </div>
+    
+                        <div class="flex">
+                            <button class="zero basis-1/3 p-4 m-2 text-black button-background rounded-full">
+                                0
+                            </button>
+                            <button class="dot basis-2/3 p-4 m-2 text-black button-background rounded-full">
+                                .
+                            </button>
+                        </div>
+    
+                    </section>
+                </div>
+
+                <section class="flex flex-col pt-5">
+                    <button class="clear p-4 m-2 text-black button-background rounded-full" >
+                        C
+                    </button>
+                    <button class="suma p-4 m-2 text-black button-background rounded-full">
+                        +
+                    </button>
+                    <button class="resta p-4 m-2 text-black button-background rounded-full">
+                        -
+                    </button>
+                    <button class="multiplicacion p-4 m-2 text-black button-background rounded-full">
+                        *
+                    </button>
+                    <button class="division p-4 m-2 text-black button-background rounded-full">
+                        /
+                    </button> 
+                    <button class="equal p-4 m-2 text-black button-background rounded-full">
+                        =
+                    </button> 
+                </section>
+            </div>
+    
+            <!-- <p class="resultado input-background px-5 py-1 mt-5 rounded-full font-mono text-xl font-semibold" >
+                ----------------
+            </p> -->
+        </div>
+    </div>
+
+
+    <script src="./src/index.js" type="module"></script>
+</body>
+</html>

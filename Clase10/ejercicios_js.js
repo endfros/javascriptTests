@@ -62,7 +62,7 @@ let students = [
     }
   ];
 
-let resultado =students.filter((student)=>{
+let resultado = students.filter((student)=>{
     return student.score >= 10
 })
 
