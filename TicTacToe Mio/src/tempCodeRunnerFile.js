@@ -1,14 +1,26 @@
-let array1 = [
-    [btn1.innerText === "X",btn2.innerText === "X",btn3.innerText === "X"],
-    [btn4.innerText === "X",btn5.innerText === "X",btn6.innerText === "X"],
-    [btn7.innerText === "X",btn8.innerText === "X",btn9.innerText === "X"],
-    [btn1.innerText === "X",btn4.innerText === "X",btn7.innerText === "X"],
-    [btn2.innerText === "X",btn5.innerText === "X",btn8.innerText === "X"],
-    [btn3.innerText === "X",btn6.innerText === "X",btn9.innerText === "X"],
-    [btn1.innerText === "X",btn5.innerText === "X",btn9.innerText === "X"],
-    [btn3.innerText === "X",btn5.innerText === "X",btn7.innerText === "X"]
-]
+const array = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [1,4,7],
+    [2,5,8],
+    [3,6,9],
+    [1,5,9],
+    [3,5,7]
+];
 
-for(element of array1){
-    console.log(array1.indexOf(element))
+const number = [1, 2, 4];
+
+let results = [];
+
+for(let i = 0; i < array.length; i++){
+    results[i] = array[i].every((element,i) => {
+        return element === number[i]
+    })
 }
+
+// console.log(results);
+
+console.log(results.some((element) => {
+    return element === true;
+}))
