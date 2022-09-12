@@ -12,7 +12,7 @@ let newNumber = 29;
 
 // Objeto auto 
 
-function car() {
+function Car() {
     this.doors = 0;
     this.color = 'black',
     this.electric = false,
@@ -21,7 +21,7 @@ function car() {
     } 
 }
 
-let formulaCar = new car();
+let formulaCar = new Car();
 console.log(formulaCar);
 
 // Arreglo

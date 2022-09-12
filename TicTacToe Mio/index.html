@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TicTacToe</title>
+</head>
+<body class="flex flex-col justify-center items-center bg-slate-900 h-screen">
+    <div class="flex py-5">
+        <h1 class="text-5xl text-slate-50 text-center">TicTacToe</h1>
+    </div>
+    <div class="select flex py-5">
+        <label class="text-3xl text-slate-50 text-center">Selecciona tu ficha: </label>
+        <select class="select-value mx-5 text-xl bg-slate-400  text-center rounded" name="cars" id="cars">
+            <option class="text-xl font-extrabold" value="X">X</option>
+            <option class="text-xl font-extrabold" value="O">O</option>
+          </select>
+    </div>
+    <button class="play text-xl font-bold flex px-2 py-3 m-5 text-black bg-slate-200 rounded">
+        PLAY!!!
+    </button>
+    <div class="flex py-5">
+        <h2 class="state text-3xl text-slate-50 text-center"></h2>
+    </div>
+    <section class="flex flex-col bg-slate-900 py-5">
+        <div class="flex-col">
+            <div class="flex-row">
+                <button class="buttons button-1 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+                <button class="buttons button-2 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+                <button class="buttons button-3 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+            </div>
+            <div class="flex-row">
+                <button class="buttons button-4 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+                <button class="buttons button-5 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+                <button class="buttons button-6 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+            </div>
+    
+            <div class="flex-row">
+                <button class="buttons button-7 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+                <button class="buttons button-8 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+                <button class="buttons button-9 basis-1/3 bg-slate-400 p-4 w-20 h-20 rounded m-2 text-3xl font-extrabold">&nbsp</button>
+            </div>
+        </div>
+    </section>
+    <button class="reset flex px-2 py-3 m-5 text-black bg-slate-200 rounded">
+        Reset
+    </button>
+    <script src="./src/index.js" type="module"></script>
+</body>
+</html>

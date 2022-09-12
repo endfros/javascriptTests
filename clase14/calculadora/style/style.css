@@ -3,6 +3,7 @@ body {
 	background-size: 800% 800%;
 	animation: gradient 5s ease infinite;
 	height: 100vh;
+
 }
 
 @keyframes gradient {
@@ -30,4 +31,5 @@ body {
 .button-background{
     background-color: rgba(0, 0, 0, 0.212);
     backdrop-filter: blur(60px);
+	
 }
