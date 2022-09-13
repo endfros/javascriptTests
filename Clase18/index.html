@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="flex h-screen justify-center items-center">
+        <section class="w-72 h-80 p-5 bg-white rounded-xl" id="login">
+            <h1 class="text-center mt-3 text-2xl font-extrabold">
+                Log
+            </h1>
+            <form class="flex flex-col" action="">
+                <label for="mail" class="mx-5 mt-4 font-bold">Mail</label>
+                <input id="mail" class="bg-neutral-200 rounded-full px-4 py-1 mx-4 mt-1 mb-3" type="email">
+                <label for="password" class="mx-5 mt-3 font-bold">Password</label>
+                <input id="password" class="bg-neutral-200 rounded-full px-4 py-1 mx-4 mt-1 mb-3" type="password">
+                <button class="button self-center w-20 mt-3 p-2 rounded-full text-white" >Log In</button>
+            </form>
+        </section>
+        <section class="hidden w-72 h-80 p-5 bg-white rounded-xl" id="list">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-extrabold">
+                    Your tasks
+                </h2>
+                <button class="button close text-white rounded-full px-2" >X</button>
+            </div>
+            <section class="h-48 p-2 mb-1 overflow-scroll">
+                <ul class="list divide-y divide-slate-300">
+                    <li class="py-3">Task 1</li>
+                    <li class="py-3">Task 2</li>
+
+                </ul>
+            </section>
+            <input class="task bg-neutral-200 rounded-full px-4 py-1 mt-1 mb-3"  type="text" placeholder="Write your task here...">
+            <button class="button submit-task text-white text-xl rounded-full px-2 pb-0.5 font-extrabold" >+</button>
+        </section>
+    </main>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

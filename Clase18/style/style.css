@@ -1,0 +1,13 @@
+body {
+  background-color: darkorange;
+}
+
+.button {
+  background-color: rgb(255, 85, 0);
+}
+
+h1:after {
+  content: "In";
+  color: rgb(244, 94, 0);
+  left: -50px;
+}/*# sourceMappingURL=style.css.map */
