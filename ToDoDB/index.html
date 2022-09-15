@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="flex h-screen justify-center items-center">
+        <section class="w-72 h-80 p-5 bg-white rounded-l-xl" id="list">
+            <h1 class="text-center mt-3 text-2xl font-extrabold">
+                New
+            </h1>
+            <form class="flex flex-col" action="">
+                <label for="" class="mx-5 mt-4 font-bold">Title</label>
+                <input id="title" class="bg-neutral-200 rounded-full px-4 py-1 mx-4 mt-1 mb-3" type="text">
+                <label for="" class="mx-5 mt-3 font-bold">Description</label>
+                <input id="description" class="bg-neutral-200 rounded-full px-4 py-1 mx-4 mt-1 mb-3" type="text">
+                <button class="button self-center w-40 mt-3 p-2 rounded-full text-white" >Add task</button>
+            </form>
+        </section>
+        <section class="w-72 h-80 p-5 bg-white rounded-r-xl" id="list">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-extrabold">
+                    Your tasks
+                </h2>
+            </div>
+            <section class="list-container h-48 p-2 mb-1 overflow-scroll">
+                <ul class="list divide-y divide-slate-300">
+
+                </ul>
+
+
+        </section>
+    </main>
+    
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

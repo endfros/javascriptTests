@@ -3,6 +3,8 @@ const button = document.querySelector('button');
 const close = document.querySelector('.close');
 const addTask = document.querySelector('.submit-task');
 
+let tasks = 0;
+console.log(tasks)
 
 button.addEventListener('click', (event) => {
     event.preventDefault(); // Prevents the default event of an element
@@ -42,12 +44,38 @@ addTask.addEventListener('click',() => {
     let list = document.querySelector('.list');
     let taskContent = document.querySelector('.task').value;
 
-    let item = document.createElement('li');
+    if(!taskContent.trim()){
+        window.alert('No puedes ingresar una tarea en blanco!!');
+    } else {
+        let item = document.createElement('li');
+        let erase = document.createElement('button');
+        let containerTask = document.createElement('div');
+        let itemContainer = document.querySelector('.item-container');
+        erase.innerText = '-';
+        erase.setAttribute('class',`delete close h-6 pb-0.5 text-white rounded-full px-2 font-bold`);
+        item.innerText = taskContent;
+        item.setAttribute('class',"py-3");
+        tasks += 1;
+        console.log(tasks);
+        containerTask.appendChild(item);
+        containerTask.appendChild(erase);
 
-    item.innerText = taskContent;
-    item.setAttribute('class',"py-3");
-
-    list.appendChild(item);
-
+        containerTask.setAttribute('class',`item-container${tasks} flex justify-between items-center`);
+        
+        list.appendChild(containerTask);
+    }
 });
+
+let deleteTask = document.querySelectorAll(`.delete`);
+
+deleteTask.addEventListener('click', () => {
+    let itemContainer = document.querySelector('.item-container');
+    itemContainer.remove();
+    console.log('working?')
+});
+    
+
+
+
+
 
